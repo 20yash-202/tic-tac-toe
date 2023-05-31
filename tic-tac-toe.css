@@ -1,0 +1,89 @@
+body{
+    background:  url("pic.jpg") no-repeat fixed ;
+    background-size: cover;
+}
+.show{display: block;
+    width: 50vw; height: 10vh;
+    transform: translate(20vw);
+    background-image: linear-gradient(darkblue, cyan) ;
+    font-size: 5vw;
+    font-style: italic;
+    border: none;
+    color:lightcyan;
+}
+#i1{ margin-top: 10vh;}
+.box{
+    width: 40vw; height: 50vh;
+    transform: translate(25vw);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 2vh;
+}
+.butt{background-image: linear-gradient(darkblue, cyan);
+    font-size: 5vw;
+}
+.butt:hover{
+    background-image: linear-gradient(black, pink);
+}
+.heading{
+    font-size: 10vw;
+    margin-top: 10vh;
+    margin-bottom: 0%;
+    transform: translate(10vw);
+    color:aliceblue;
+    display: inline-block;
+    animation: anime 4s ease-in  1 normal ;
+}
+.image{
+    width: 15vw; height: 20vh;
+    transform: translate(10vw, 3vh);
+    margin-top: 0%;
+    animation: anime2 4s ease-in  1 normal ;
+}
+.start:hover{
+    background-color:brown;
+}
+.start{
+    width: 25vw; height: 30vh;
+    transform: translate(30vw);
+    margin-top: 15px;
+    animation: anime2 4s ease-in  1 normal ;
+}
+.name{color: aqua;}
+.reset{
+    transform: translate(45vw);
+    width: 10vw; height: 10vh;
+    background-image: linear-gradient(darkblue, cyan) ;
+    font-size: 2vw; font-style: italic;
+}
+.go{
+    transform: translate(25vw);
+    width: 10vw; height: 10vh;
+    background-image: linear-gradient(darkblue, cyan) ;
+    font-size: 2vw; font-style: italic;
+}
+.para{
+    font-size: 5vw;
+    font-style: italic;
+    color: aliceblue;
+    transform: translate(30vw, -10vh);
+}
+@media screen and (max-width:600px) {
+    .image{height: 10vh;} 
+    .start{height: 20vh;}     
+}
+@media screen and (max-width:800px) {
+    .image{height: 9.8vh;}
+    .para{font-size: 8vw;
+        transform: translate(25vw,-4vh);}
+}
+@keyframes anime{
+    0%{font-size: 2vw;}
+    50%{font-size: 6vw;}
+    100%{font-size:  10vw;}
+}
+@keyframes anime2{
+    0%{width: 5vw; height: 5vh;}
+    50%{width: 10vw; height: 10vh;}
+    100%{width: 20vw; height: 20vh;}
+}
