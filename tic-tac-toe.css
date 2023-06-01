@@ -4,17 +4,16 @@ body{
 }
 .show{display: block;
     width: 50vw; height: 10vh;
-    transform: translate(20vw);
-    background-image: linear-gradient(darkblue, cyan) ;
+    transform: translate(20vw, -10vh);
+    background-image: linear-gradient(darkred, yellow) ;
     font-size: 5vw;
     font-style: italic;
     border: none;
-    color:lightcyan;
 }
 #i1{ margin-top: 10vh;}
 .box{
     width: 40vw; height: 50vh;
-    transform: translate(25vw);
+    transform: translate(25vw, -10vh);
     display: grid;
     grid-template-columns: auto auto auto;
     margin-bottom: 2vh;
@@ -51,15 +50,15 @@ body{
 }
 .name{color: aqua;}
 .reset{
-    transform: translate(45vw);
+    transform: translate(45vw, -10vh);
     width: 10vw; height: 10vh;
-    background-image: linear-gradient(darkblue, cyan) ;
+    background-image: linear-gradient(darkred, yellow) ;
     font-size: 2vw; font-style: italic;
 }
 .go{
-    transform: translate(25vw);
+    transform: translate(25vw, -10vh);
     width: 10vw; height: 10vh;
-    background-image: linear-gradient(darkblue, cyan) ;
+    background-image: linear-gradient(darkred, yellow) ;
     font-size: 2vw; font-style: italic;
 }
 .para{
@@ -70,7 +69,9 @@ body{
 }
 @media screen and (max-width:600px) {
     .image{height: 10vh;} 
-    .start{height: 20vh;}     
+    .start{height: 20vh;}   
+    .go{  width:11vw; height: 12vh;}
+    .reset{ height: 12vh; width: 11vw;}  
 }
 @media screen and (max-width:800px) {
     .image{height: 9.8vh;}
